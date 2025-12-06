@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.app-header {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.app-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.app-header h1 {
+  color: #667eea;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #555;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #667eea;
+  color: white;
+}
+
+.app-main {
+  flex: 1;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-container {
+  text-align: center;
+  padding: 100px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-text {
+  color: #d32f2f;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-retry {
+  padding: 12px 30px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-retry:hover {
+  background-color: #5568d3;
+}
+
+.app-footer {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+.app-footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .app-header .container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .app-header h1 {
+    font-size: 22px;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-link {
+    display: block;
+  }
+}
