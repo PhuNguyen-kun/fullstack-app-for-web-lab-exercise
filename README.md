@@ -1,15 +1,15 @@
-# Student Management System 🎓
+# Student Management System
 
-Ứng dụng quản lý học sinh full-stack sử dụng MERN stack (MongoDB, Express, React, Node.js).
+Ứng dụng full-stack quản lý học sinh (MongoDB, Express, React, Node.js).
 
 ## Tính năng
 
-- ✅ Hiển thị danh sách học sinh
-- ✅ Thêm học sinh mới
-- ✅ Chỉnh sửa thông tin học sinh
-- ✅ Xóa học sinh (với xác nhận)
-- ✅ Tìm kiếm học sinh theo tên
-- ✅ Sắp xếp danh sách A-Z / Z-A
+- Hiển thị danh sách học sinh
+- Thêm học sinh mới
+- Chỉnh sửa thông tin học sinh
+- Xóa học sinh (với xác nhận)
+- Tìm kiếm học sinh theo tên
+- Sắp xếp danh sách A-Z / Z-A
 
 ## Công nghệ sử dụng
 
@@ -41,10 +41,8 @@ docker-compose up -d
 Trước khi chạy backend, hãy tạo file `.env` từ file mẫu:
 
 ```bash
-cp backend/.env.example backend/.env
+cp .env.example .env
 ```
-
-Bạn có thể chỉnh sửa giá trị trong `.env` nếu cần (ví dụ đổi port hoặc URI MongoDB).
 
 ### 2.2. Cài đặt và chạy Backend
 
@@ -122,13 +120,3 @@ fullstack-app-for-web-lab-exercise/
 4. **Xóa học sinh**: Click nút "Xóa" và xác nhận lại
 5. **Tìm kiếm**: Nhập tên vào ô tìm kiếm
 6. **Sắp xếp**: Click nút "Sắp xếp" để đổi thứ tự A-Z / Z-A
-
-## Lưu ý
-
-- Đảm bảo Docker đang chạy trước khi khởi động MongoDB
-- Backend phải chạy trước khi sử dụng Frontend
-- Kiểm tra port 27017, 5000, và 5173 không bị chiếm dụng
-
-## Tác giả
-
-Bài thực hành Web - HUST
