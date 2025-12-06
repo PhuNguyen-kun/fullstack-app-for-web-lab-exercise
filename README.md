@@ -36,7 +36,17 @@ cd backend
 docker-compose up -d
 ```
 
-### 2. Cài đặt và chạy Backend
+### 2.1. Tạo file môi trường cho backend
+
+Trước khi chạy backend, hãy tạo file `.env` từ file mẫu:
+
+```bash
+cp backend/.env.example backend/.env
+```
+
+Bạn có thể chỉnh sửa giá trị trong `.env` nếu cần (ví dụ đổi port hoặc URI MongoDB).
+
+### 2.2. Cài đặt và chạy Backend
 
 ```bash
 # Ở trong thư mục backend
