@@ -31,14 +31,15 @@
 ### 1. Khởi động MongoDB với Docker
 
 ```bash
-# Từ thư mục gốc của project
+# Từ thư mục backend
+cd backend
 docker-compose up -d
 ```
 
 ### 2. Cài đặt và chạy Backend
 
 ```bash
-cd backend
+# Ở trong thư mục backend
 npm install
 npm run dev
 ```
@@ -48,12 +49,40 @@ Backend sẽ chạy tại: http://localhost:5000
 ### 3. Cài đặt và chạy Frontend
 
 ```bash
-cd student-management
+# Từ thư mục gốc
+cd frontend
 npm install
 npm run dev
 ```
 
 Frontend sẽ chạy tại: http://localhost:5173
+
+## Cấu trúc thư mục
+
+```
+fullstack-app-for-web-lab-exercise/
+├── backend/
+│   ├── models/
+│   │   └── Student.js
+│   ├── routes/
+│   │   └── studentRoutes.js
+│   ├── docker-compose.yml    # MongoDB container config
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── StudentList.jsx
+│   │   │   ├── AddStudent.jsx
+│   │   │   └── EditStudent.jsx
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   └── package.json
+└── README.md
+```
 
 ## API Endpoints
 
